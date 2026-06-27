@@ -217,7 +217,7 @@ npm run dev
 # about me (Developer)
 
 **Kalp Pathak** :)
-
+Cybersecurity student and aspiring Full Stack Developer.
 Built as a learning project to understand real-world full-stack development and agricultural supply chain workflows.
 
 ---
