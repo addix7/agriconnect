@@ -1,7 +1,12 @@
+const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
+const middlemanRoutes = require("./routes/middlemanRoutes");
+
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 
@@ -19,6 +24,7 @@ app.use("/", productRoutes);
 
 
 app.use("/", userRoutes);
+app.use("/", middlemanRoutes);
 
 app.listen(3000, () => {
   console.log("Server started on port 3000");
